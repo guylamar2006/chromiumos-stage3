@@ -36,7 +36,7 @@ jobs:
       - name: Build ChromiumOS Stage3
         run: sudo ./build.sh
       - name: Upload artifacts
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: chromiumos-stage3-build
           path: chromiumos_stage3_*.tar.gz
