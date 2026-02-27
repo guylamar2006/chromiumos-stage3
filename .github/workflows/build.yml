@@ -57,7 +57,7 @@ jobs:
           echo "Free space:"
           df -h
       - name: Download built artifacts
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v8
         with:
           name: chromiumos-stage3-build
       - name: Generate release details
